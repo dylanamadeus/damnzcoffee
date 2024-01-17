@@ -1,0 +1,405 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("foto/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.h1login {
+    margin-left: 205px;
+}
+
+.underline-design {
+    border-bottom: 2px solid #cccccc; 
+    width: 400px;
+    text-decoration: none; 
+    margin-left: 103px;
+    margin-bottom: 30px;
+}  
+
+.underline-transaction {
+    border-bottom: 2px solid #cccccc; 
+    width: 200px;
+    text-decoration: none; 
+}  
+  
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #0d2329;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 20px;
+
+}
+
+nav div img {
+    transform: scale(2.3); 
+    max-width: 80px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem 2rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #144856;
+    min-width: 135px;
+    box-shadow: 0px 8px 8px 0px rgba(127, 255, 227, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-30%); /* Center horizontally */
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 5px 8px;
+    text-decoration: none;
+ 
+}
+
+.dropdown-item:hover,
+.dropdown-content a:hover { /* Apply styles to both dropdown items and their anchor tags when hovered */
+    background-color: #387586;
+}
+
+
+.dropdown-content a {
+    padding: 10px 5px 5px;
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.dropdown-content a:hover {
+    color: #fffdfd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .username {
+    flex-grow: 1; /* Membuat username menyesuaikan dan menengah */
+    text-align: center; /* Pusatkan teks */
+}
+
+.navbar .username span {
+    background: #f0f0f0; /* Warna latar belakang untuk teks username */
+    padding: 5px 10px; /* Ruang di sekitar teks username */
+    border-radius: 5px; /* Sudut bulat */
+    font-weight: bold;
+    text-align: center; /* Pusatkan teks */
+}
+
+nav ul li a,
+#username {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+nav ul li a img{
+    max-width: 30px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+a.registerPress {
+    color: rgba(255, 255, 255, 0.659);;
+}
+
+a.registerPress:hover {
+    color: rgb(255, 255, 255);
+}
+
+.login-form {
+    border: 0px;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 120px auto;
+    background-color: #0d2329;
+    width: 600px;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    background: linear-gradient(to right, #0d2329 50%);
+
+    background-image: url('foto/logo.png');
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input-group label {
+    font-size: 12px; 
+    margin-right: 5px;
+}
+
+.input-group input {
+    width: 220px;
+    font-size: 15px; 
+    padding: 5px; 
+    border-radius: 30px;
+}
+
+.login-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-group img{
+    border-radius: 50px;
+    max-width: 45px;
+}
+
+.login-form button[type="submit"] {
+    width: 160px;
+    background: linear-gradient(to right, rgb(12, 59, 71) 0%, #616161 100%);
+    color: rgb(230, 230, 230); 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    display: inline-block;
+    margin-left: 225px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.login-form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.container button[type="submit"]{
+    width: 160px;
+    background: linear-gradient(to right, rgb(12, 59, 71) 0%, #616161 100%);
+    color: rgb(230, 230, 230); 
+    padding: 10px 30px; 
+    border-radius: 25px;
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#paymentMethod {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; 
+    background-color:   #1c3238;
+    color: #f3f0f0;
+    cursor: pointer;
+}
+
+#paymentMethod option {
+    background-color: #5c97a8;
+    color: #144856;
+}
+
+#paymentMethod:focus {
+    border-color: #144856; 
+    box-shadow: 0 0 5px #144856;
+}
+
+#paymentMethod, #paymentMethod option {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.noaccount-group {
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 220px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.659);
+}
+
+.about-container{
+    color: #fff;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    padding: 50px;
+    width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgb(12, 59, 71) 0%, #616161 100%);
+    max-width: 1200px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #0d2329 50%);
+    text-align: center;
+}
+
+.transactionform {
+    margin: 0 auto;
+    align-items: center;
+    grid-gap: 30px;
+    justify-content: flex-start;
+    width: 950px;
+    background-color: #1c3238;
+    color: rgb(230, 230, 230); 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    border: none;
+}
+
+.product-info img {
+    object-fit:cover;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+}
+
+.total-subtotal {
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+    grid-gap: 30px;
+    justify-content: flex-start;
+    width: 950px;
+    background: linear-gradient(to right, rgb(12, 59, 71) 0%, #616161 100%);
+    color: rgb(230, 230, 230); 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    border: none;
+}
+
+.total-subtotal button{
+    align-items: center;
+    grid-gap: 30px;
+    justify-content: flex-start;
+    width: 950px;
+    background: linear-gradient(to right, rgb(13, 43, 50) 0%, rgb(49, 49, 49)100%);
+    color: rgb(230, 230, 230); 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    border: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 30px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    left: 60px;
+}
+
+.grid > article{
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 40px;
+    text-align: center;
+    background: #0d2329;
+    margin-bottom: 30px;
+}
+
+.grid > article img{
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    object-fit:scale-down;
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+}
+
+.grid > article:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.grid article h2{
+    color: #fff;
+}
+
+.grid article p{
+    color: #d63030;
+}
+
+.about-me {
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+  }
+  
+  .about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-me-text h2 {
+    font-size: 30px;
+    color: #efefef;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .about-me-text p {
+      font-size: 15px;
+      color: #ffffff;
+      margin: 10px 0;
+      margin-right: 40px;
+  }
